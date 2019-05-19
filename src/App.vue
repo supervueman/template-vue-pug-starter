@@ -2,18 +2,18 @@
   div(id="app")
     toolbar(
       :firstname="profile.firstname"
-      :avatarPath="profile.avatar"
+      :avatarPath="`${staticImgBasePath}/${profile.avatar}`"
     )
     router-view
-    div {{profile}}
 </template>
 
 <script>
+import config from "@/config";
 export default {
   name: "app",
   data() {
     return {
-      // profile: this.$store.getters["profile/getProfile"]
+      staticImgBasePath: config.staticImgBasePath
     };
   },
   computed: {
@@ -28,5 +28,6 @@ export default {
 </script>
 
 <style lang="sass">
-
+#app
+  padding: 80px 20px 0 20px
 </style>

@@ -1,7 +1,8 @@
 <template lang="pug">
-  header
-    div {{firstname}}
-    avatar(:imagePath="avatarPath")
+  header.toolbar.d-flex.content-end
+    h3.toolbar-menu.d-flex.content-center.align-center
+      avatar(:imagePath="avatarPath")
+      div.name {{firstname}}
 </template>
 
 <script>
@@ -18,3 +19,18 @@ export default {
   }
 };
 </script>
+
+
+<style lang="sass">
+.toolbar
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 60px
+  padding: 0 20px
+  background-color: #000
+  .name
+    margin-left: 10px
+    color: #fff
+</style>
