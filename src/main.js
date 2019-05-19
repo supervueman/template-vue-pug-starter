@@ -1,10 +1,14 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import commonComponentsRequire from '@/functions/commonComponentsRequire';
+import App from './App.vue';
 import router from './routers';
 import {
   store
 } from './store';
 import axios from 'axios';
+import '@/assets/sass/index.sass';
+
+commonComponentsRequire();
 
 Vue.config.productionTip = false;
 const baseUrl =

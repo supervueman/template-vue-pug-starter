@@ -1,7 +1,7 @@
 const profile = {
-  firstName: 'Rinat',
-  lastName: 'Davlikamov',
-  nickName: 'supervueman',
+  firstname: 'Rinat',
+  lastname: 'Davlikamov',
+  nickname: 'supervueman',
   age: 28,
   avatar: 'avatar.jpg'
 }
@@ -9,7 +9,7 @@ const profile = {
 export default {
   namespaced: true,
   state: {
-    profile: null
+    profile: {}
   },
   mutations: {
     setProfile(state, payload) {
