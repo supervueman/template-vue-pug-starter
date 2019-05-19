@@ -7,11 +7,11 @@ const profile = {
 }
 
 export default {
+  namespaced: true,
   state: {
     profile: null
   },
   mutations: {
-    namespaced: true,
     setProfile(state, payload) {
       state.profile = payload;
     }
