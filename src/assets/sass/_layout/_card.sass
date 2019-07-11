@@ -1,1 +1,56 @@
 .card
+	border-radius: $border-radius
+	border: 1px solid $dark-color
+	background-color: $light-color
+	position: relative
+	&--wrapper
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&--inner
+		width: 100%
+		display: flex
+		flex-direction: column
+	&--media
+		width: 100%
+		height: 200px
+		overflow: hidden
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		margin-bottom: $gap / 2
+		img
+			width: 100%
+	&--header
+		width: 100%
+		padding: $gap / 2 $gap
+	&--content
+		width: 100%
+		padding: $gap / 2 $gap
+	&--icons
+		width: 100%
+		display: flex
+		align-items: center
+		padding: $gap / 2 $gap
+	&--icon
+		flex: 1
+	&--actions
+		width: 100%
+		padding: 0
+		display: flex
+		align-items: center
+		border-top: 1px solid $dark-color
+	&--button
+		flex: 1
+		border: none!important
+	&--title
+		color: $dark-color
+		font-weight: bold
+		font-size: 1.2em
+		margin: 0 0 $gap / 2 0
+	&--subtitle
+		color: $dark-color
+		font-weight: bold
+		font-size: 0.9em
+		margin: 0 0 $gap / 2 0

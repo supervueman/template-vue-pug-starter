@@ -2,10 +2,25 @@
   div.page
     main.main
       section.section.section--main
-      avatar(:imagePath="`${staticFolderBasePath}/${profile.avatar}`")
-      h3 {{profile.lastname}} {{profile.firstname}}
-      div Age: {{profile.age}}
-      div.button BUTTON
+        .container
+          h1.title.title-primary First screen title
+          h2.title.title-secondary First screen subtitle
+      section.section
+        .container
+          .container--wrapper
+            .item(v-for="i in 5" :key="i")
+              .card
+                .card--wrapper
+                  .card--inner
+                    .card--media
+                      img(:src="`${staticFolderBasePath}/${profile.avatar}`", alt="alt")
+                    .card--header
+                      h3.card--title {{profile.lastname}} {{profile.firstname}}
+                      h4.card--subtitle Age: {{profile.age}}
+                    .card--content
+                      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  .card--actions
+                    .card--button.button Button
 </template>
 
 <script>

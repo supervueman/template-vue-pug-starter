@@ -1,5 +1,5 @@
 <template lang="pug">
-	div(id="app")
+	#app
 		toolbar(
 			:firstname="profile.firstname"
 			:avatarPath="`${staticFolderBasePath}/${profile.avatar}`"
