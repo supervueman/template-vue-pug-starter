@@ -1,6 +1,7 @@
 <template lang="pug">
   div.page
     main.main
+      section.section.section--main
       avatar(:imagePath="`${staticFolderBasePath}/${profile.avatar}`")
       h3 {{profile.lastname}} {{profile.firstname}}
       div Age: {{profile.age}}

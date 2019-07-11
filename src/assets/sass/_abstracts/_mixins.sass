@@ -92,3 +92,20 @@
 		border-color: $active-border-color
 		color: $active-color
 		background-color: $active-background-color
+
+
+
+
+@mixin absolute-centered($coord-line: xy)
+	@if $coord-line == xy
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		margin: auto
+	@else if $coord-line == x
+		position: absolute
+		left: 0
+		right: 0
+		margin: auto
