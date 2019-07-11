@@ -1,0 +1,12 @@
+.button
+	font-size: 1em
+	cursor: pointer
+	border: 1px solid $light-color
+	border-radius: $border-radius
+	z-index: z(modal)
+	@include button-colorize($light-color, $dark-color, $light-color, $light-color, $light-color, $dark-color)
+
+	@include respond-to(medium)
+		font-size: 0.8em
+	@include respond-to(small)
+		font-size: 0.6em

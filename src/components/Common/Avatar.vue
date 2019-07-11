@@ -9,12 +9,12 @@ export default {
   props: {
     imagePath: {
       type: String,
-      default: `${config.staticImgBasePath}/logo.png`
+      default: `${config.staticFolderBasePath}/logo.png`
     }
   },
   data() {
     return {
-      staticImgBasePath: config.staticImgBasePath
+      staticFolderBasePath: config.staticFolderBasePath
     };
   }
 };

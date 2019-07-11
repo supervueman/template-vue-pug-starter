@@ -1,3 +1,3 @@
 export default {
-  staticImgBasePath: '/static/img'
+  staticFolderBasePath: '/static/img'
 }

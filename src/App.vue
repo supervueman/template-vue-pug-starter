@@ -1,19 +1,19 @@
 <template lang="pug">
-  div(id="app")
-    toolbar(
-      :firstname="profile.firstname"
-      :avatarPath="`${staticImgBasePath}/${profile.avatar}`"
-    )
-    router-view
+	div(id="app")
+		toolbar(
+			:firstname="profile.firstname"
+			:avatarPath="`${staticFolderBasePath}/${profile.avatar}`"
+		)
+		router-view
 </template>
 
 <script>
 import config from "@/config";
 export default {
-  name: "app",
+  name: "App",
   data() {
     return {
-      staticImgBasePath: config.staticImgBasePath
+      staticFolderBasePath: config.staticFolderBasePath
     };
   },
   computed: {
@@ -29,5 +29,5 @@ export default {
 
 <style lang="sass">
 #app
-  padding: 80px 20px 0 20px
+	width: 100%
 </style>
