@@ -84,19 +84,39 @@
 
 
 // Button mixin colorize
-@mixin button-colorize($border-color, $color, $background-color, $active-border-color, $active-color, $active-background-color)
+@mixin button-colorize($border-color, $color, $bg-color, $active-border-color, $active-color, $active-bg-color)
 	border-color: $border-color
 	color: $color
-	background-color: $background-color
+	background-color: $bg-color
 	@include on-event
 		border-color: $active-border-color
 		color: $active-color
-		background-color: $active-background-color
+		background-color: $active-bg-color
+
+// Input mixin colorize
+@mixin input-colorize($color, $bg-color, $border-color, $active-color, $active-bg-color, $active-border-color)
+	color: $color
+	background-color: $bg-color
+	border-color: $border-color
+	@include on-event
+		color: $active-color
+		background-color: $active-bg-color
+		border-color: $active-border-color
+
+// Link mixin colorize
+@mixin link-colorize($color, $active-color)
+	color: $color
+	&::after
+		background-color: $color
+	@include on-event
+		color: $active-color
+		&::after
+			background-color: $active-color
 
 
 
 
-@mixin absolute-centered($coord-line: xy)
+@mixin absolute-location($coord-line: xy)
 	@if $coord-line == xy
 		position: absolute
 		top: 0

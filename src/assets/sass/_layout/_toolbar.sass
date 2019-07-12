@@ -7,6 +7,25 @@
 	background-color: $light-color
 	display: flex
 	align-items: center
+	justify-content: space-between
 	padding: 0 $gap
 	border-bottom: 1px solid $dark-color
 	z-index: z(toolbar)
+	&--menu
+		display: flex
+		align-items: center
+	&--link
+		@extend %link
+		@include link-colorize($dark-color, $dark-color)
+		margin: 0 $gap
+		&-active
+			@extend %link-active
+			@include link-colorize($dark-color, $dark-color)
+	&--logo
+		width: 40px
+		margin-right: $gap * 2
+		img
+			width: 100%
+	&--button
+		@extend %button
+		@include button-colorize($dark-color, $dark-color, $light-color, $dark-color, $light-color, $dark-color)
