@@ -21,14 +21,14 @@
 		width: 100%
 		align-items: center
 	&--item
-		padding: $gap / 2 $gap $gap / 2 0
+		padding: $gap / 2 0
 		display: flex
 		flex-direction: column
 		align-items: flex-start
 		justify-content: center
 	&--link
 		@extend %base-layout--link
-		margin: $gap / 2 0
+		margin-bottom: $gap / 2
 		@include link-colorize($dark-color, $dark-color)
 		&-active
 			@include link-colorize($dark-color, $dark-color)

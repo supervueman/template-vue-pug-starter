@@ -15,7 +15,7 @@
               h2.section--title Section title
               h3.section--subtitle Section subtitle
             .section--content
-              .container--wrapper
+              .container--wrapper.grid--large-3
                 a.card(v-for="i in 3" :key="i")
                   .card--wrapper
                     .card--inner

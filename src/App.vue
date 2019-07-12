@@ -4,7 +4,10 @@
 		router-view
 		footer.footer
 			.container
-				.container--wrapper
+				.container--wrapper.grid--large-4
+					.footer--item
+						a.footer--link(href="/") Link 1
+						a.footer--link(href="/") Link 2
 					.footer--item
 						a.footer--link(href="/") Link 1
 						a.footer--link(href="/") Link 2
@@ -16,7 +19,7 @@
 						a.footer--link(href="/") Link 2
 				.footer--item
 					.footer--inner
-						.footer--logo
+						a.footer--logo(href="/")
 							img(src="/static/img/logo.png", alt="alt")
 						p.policy 2018-2019. All rights reserved.
 							br
