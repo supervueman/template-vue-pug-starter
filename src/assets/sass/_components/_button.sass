@@ -1,13 +1,14 @@
-.button
+%button
 	font-size: 1em
 	cursor: pointer
-	border: 1px solid $light-color
-	border-radius: $border-radius
 	text-align: center
 	display: flex
 	align-items: center
 	justify-content: center
 	height: 40px
+
+.button
+	@extend %button
 	@include button-colorize($light-color, $dark-color, $light-color, $light-color, $light-color, $dark-color)
 
 	@include respond-to(medium)
