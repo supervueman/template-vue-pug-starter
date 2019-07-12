@@ -1,10 +1,29 @@
 <template lang="pug">
 	#app
-		toolbar(
-			:firstname="profile.firstname"
-			:avatarPath="`${staticFolderBasePath}/${profile.avatar}`"
-		)
+		toolbar
 		router-view
+		footer.footer
+			.container
+				.container--wrapper
+					.footer--item
+						a.footer--link(href="/") Link 1
+						a.footer--link(href="/") Link 2
+					.footer--item
+						a.footer--link(href="/") Link 1
+						a.footer--link(href="/") Link 2
+					.footer--item
+						a.footer--link(href="/") Link 1
+						a.footer--link(href="/") Link 2
+				.footer--item
+					.footer--inner
+						.footer--logo
+							img(src="/static/img/logo.png", alt="alt")
+						p.policy 2018-2019. All rights reserved.
+							br
+							a.policy--link.policy--link-active(href="") Privacy policy.
+			.footer--bottom
+				div.developer Created by 
+					a.developer--link(href="http://multikey.studio" target="_blank") MULTIKEY.STUDIO
 </template>
 
 <script>
