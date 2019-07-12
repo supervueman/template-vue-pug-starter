@@ -28,8 +28,9 @@
 		justify-content: center
 	&--link
 		@extend %base-layout--link
-		margin-bottom: $gap / 2
 		@include link-colorize($dark-color, $dark-color)
+		margin-bottom: $gap / 2
+		font-size: 0.8em
 		&-active
 			@include link-colorize($dark-color, $dark-color)
 	&--bottom
